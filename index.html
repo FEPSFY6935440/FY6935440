@@ -34,30 +34,6 @@
     </style>
   </head>
 
-  <head>
-    <title>Change Button Colour</title>
-  </head>
-      <body>
-        <button id="colorButton">Click me to change colour</button>
-
-        <script>
-          // Get a reference to the button element
-          var button = document.getElementByld("colorButton");
-
-          // Function to change the button colour
-          function changeColor() {
-            // Generate a randon colour (hexadecimal)
-            var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
-
-            // Set the button's background colour to the random colour
-            button.style.backgroundColor = randomColor;
-          }
-
-          // Add a click event listener to the button
-          button.addEventListener("click", changeColor);
-        </script>
-      </body>
-
   <hr>
 
   <style>
@@ -84,7 +60,7 @@
     </tr>
   </table>
 
-  <hr>
+<hr>
   
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -144,24 +120,46 @@ i have many subtitles, i will deal w u later
     </tr>
   </table>
 
-<head>
-  <title>MathML Example</title>
-</head>
-<body>
-    <h1>Quadratic Formula</h1>
-    <p>The quadratic formula is given by:</p>
+  <head>
+    <title>MathML Example</title>
+  </head>
+  <body>
+      <h1>Quadratic Formula</h1>
+      <p>The quadratic formula is given by:</p>
 
-    <!--MathML representations of the quadratic formula-->
-    <math xmlns=""http://www.w3.org/1998/Math/MathML">
-    <mrow>
-    <msup><mi>x</mi><mn>2</mn></msup>
-          <mo>+</mo><mi>4</mi><mo>&InvisibleTimes;</mo><mi>x</mi>
-          <mo>+</mo><mi>4</mi>
-    <mo>=</mo>
-    <mi>0</mi>
-    </mrow>
-</body>
+      <!--MathML representations of the quadratic formula-->
+      <math xmlns=""http://www.w3.org/1998/Math/MathML">
+      <mrow>
+      <msup><mi>x</mi><mn>2</mn></msup>
+            <mo>+</mo><mi>4</mi><mo>&InvisibleTimes;</mo><mi>x</mi>
+            <mo>+</mo><mi>4</mi>
+      <mo>=</mo>
+      <mi>0</mi>
+      </mrow>
+  </body>
 
+  <head>
+    <title>Change Button Colour</title>
+  </head>
+      <body>
+        <button id="colorButton">Click me to change colour</button>
 
+        <script>
+          // Get a reference to the button element
+          var button = document.getElementByld("colorButton");
+
+          // Function to change the button colour
+          function changeColor() {
+            // Generate a randon colour (hexadecimal)
+            var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+
+            // Set the button's background colour to the random colour
+            button.style.backgroundColor = randomColor;
+          }
+
+          // Add a click event listener to the button
+          button.addEventListener("click", changeColor);
+        </script>
+      </body>
   
 </html>
