@@ -84,10 +84,10 @@
         title: 'My Daily Activities'
       };
 
-      var chart = new google.visualization.PieChart(document.getElementById('pie_div'));pieChart.draw(pieData, pieOptions);
+      var pieChart = new google.visualization.PieChart(document.getElementById('pie_div'));pieChart.draw(pieData, pieOptions);
 
       // Scatter Chart
-      var data = new google.visualization.DataTable();
+      var scatterData = new google.visualization.DataTable();
       scatterData.addColumn('number','Age');
       scatterData.addColumn('number','Salary');
       scatterData.addRows([
@@ -105,7 +105,7 @@
         vAxis:{title:'Salary'}
       };
       
-      var scatterChart = new google.visualization.ScatterChart(document.getElementById('chart_div'));scatterChart.draw(scatterData, scatterOptions);
+      var scatterChart = new google.visualization.ScatterChart(document.getElementById('scatter_div'));scatterChart.draw(scatterData, scatterOptions);
     }
   </script>
 
