@@ -187,5 +187,30 @@ i have many subtitles, i will deal w u later
       button.addEventListener("click", showAlert);
     </script>
   </body>
+
+<hr>
+
+  <head>
+    <title>Random Number Generator</title>
+  </head>
+  <body>
+    <button id="generateButton">Generate Random Number</button>
+    <p id="randomNumber"></p>
+
+    <script>
+      // Get a reference to the button and paragraph
+      var button = document.getElementById("generateButton");
+      var paragraph = document.getElementById("randonNumber");
+
+      // Function to generate and display a random number
+      function generateRandomNumber() {
+        var randomNumber = Math.floor(Math.random() * 10) + 1;
+        paragraph.textContent = "Random Number" + randomNumber;
+      }
+
+      // Add a click event listener to the button
+      button.addEventListener("click", generateRandomNumber);
+    </script>
+  </body>
       
 </html>
