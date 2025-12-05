@@ -98,10 +98,18 @@
       margin-left: 0px;
     }
     
-    .center-video {
-      display: block;
+    .video-container {
+      width: 100%;
+      height: auto;
       margin: 0 auto;
     }
+
+    .video-container video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
   </style>
 
   <div>
@@ -159,7 +167,9 @@ The prospect of hydrogen on paper seems like a promising solution. They reap the
 
   <hr class="short-hr">
 
-  <video src = "ENG0018 Presentation.mp4" width="800" height="450" controls class = "center-video"></video>
+  <div class="video-container">  
+    <video src = "ENG0018 Presentation.mp4" controls></video>
+  </div>
 
   <hr class="short-hr">
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
