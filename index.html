@@ -354,20 +354,21 @@ The prospect of hydrogen on paper seems like a promising solution. They reap the
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Main_Article_InText");
-    const AnalysisCount = displayWordCount("MAI2");
-    const AnalysisCount = displayWordCount("MAI3");
-    const AnalysisCount = displayWordCount("MAI4");
-    const AnalysisCount = displayWordCount("MAI5");
-    const AnalysisCount = displayWordCount("MAI6");
-    const AnalysisCount = displayWordCount("MAI7");
+    const MAICount = displayWordCount("Main_Article_InText");
+    const MAI2Count = displayWordCount("MAI2");
+    const MAI3Count = displayWordCount("MAI3");
+    const MAI4Count = displayWordCount("MAI4");
+    const MAI5Count = displayWordCount("MAI5");
+    const MAI6Count = displayWordCount("MAI6");
+    const MAI7Count = displayWordCount("MAI7");
+    const ConclusionInText = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = Introduction_InText + Main_Article_InText + MAI2 + MAI3 + MAI4 + MAI5 + MAI6 + MAI7 + Conclusion_InText;
+    const totalWordCount = IntroductionCount + MAICount + MAI2Count + MAI3Count + MAI4Count + MAI5Count + MAI6Count + MAI7Count + ConclusionInText;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
   // Run the function for specific sections and display total count when the page loads
-  window.onload = displayTotalWordCount;
+  window.addEventListener("load", displayTotalWordCount);
 </script>
     
 </body>
